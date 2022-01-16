@@ -22,7 +22,8 @@ const data = [
 ];
 
 const groupedByAgency = groupBy(data, "agency");
-// => Map {
+// : Map<string, { agency: string; patient: string; gender: string; }[]>
+// = Map {
 //     'Agency A' => [
 //         { agency: 'Agency A', patient: 'Carol baskin', gender: 'F' },
 //         { agency: 'Agency A', patient: 'Carol baskin', gender: 'F' },
@@ -39,7 +40,8 @@ const groupedByAgency = groupBy(data, "agency");
 
 ```typescript
 const groupedByAgencyAndGender = groupBy(data, "agency", "gender");
-// => Map {
+// : Map<string, Map<string, { agency: string; patient: string; gender: string; }[]>>
+// = Map {
 //     'Agency A' => Map {
 //         'F' => [
 //             { agency: 'Agency A', patient: 'Carol baskin', gender: 'F' },
