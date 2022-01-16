@@ -1,0 +1,9 @@
+{
+  "name": "@ts-group-by/demo",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ts-group-by": "latest"
+  }
+}

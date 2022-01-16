@@ -1,15 +1,15 @@
 {
   "name": "ts-group-by",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.5",
+  "description": "group by one or more levels while maintaining type safety.",
   "source": "src/index.ts",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/types.d.ts",
   "scripts": {
-    "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build"
   },
+  "files": ["dist"],
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
