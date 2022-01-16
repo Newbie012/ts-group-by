@@ -1,6 +1,6 @@
 {
   "name": "ts-group-by",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "group by one or more levels while maintaining type safety.",
   "source": "src/index.ts",
   "main": "dist/index.cjs",
@@ -10,8 +10,10 @@
     "build": "parcel build"
   },
   "files": ["dist"],
-  "keywords": [],
+  "keywords": ["group-by", "group", "typescript"],
   "license": "ISC",
+  "repository": "https://github.com/Newbie012/ts-group-by",
+  "author": "Newbie012",
   "devDependencies": {
     "@parcel/packager-ts": "^2.2.0",
     "@parcel/transformer-typescript-types": "^2.2.0",
