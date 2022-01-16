@@ -2,6 +2,12 @@
 
 This package allows you to group an array by one or more levels while maintaining type safety.
 
+### How to install
+
+```bash
+npm install ts-group-by
+```
+
 ### Basic usage:
 
 ```typescript
