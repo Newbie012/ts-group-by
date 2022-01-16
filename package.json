@@ -1,6 +1,6 @@
 {
   "name": "ts-group-by",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "group by one or more levels while maintaining type safety.",
   "source": "src/index.ts",
   "main": "dist/index.cjs",

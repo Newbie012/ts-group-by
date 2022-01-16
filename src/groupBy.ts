@@ -2,12 +2,6 @@ type GroupedBy<T, K> = K extends [infer K0, ...infer KR]
     ? Map<T[Extract<K0, keyof T>], GroupedBy<T, KR>>
     : T[];
 
-// call signature
-export function groupBy<T, K extends Array<keyof T>>(
-    objects: readonly T[],
-    ...by: [...K]
-): GroupedBy<T, K>;
-
 export function groupBy<T, K extends Array<keyof T>>(
     objects: readonly T[],
     ...by: [...K]
@@ -32,18 +26,3 @@ export function groupBy<T, K extends Array<keyof T>>(
         K
     >;
 }
-
-const data = [
-    { agency: "Agency A", patient: "Carol baskin", gender: "F" },
-    { agency: "Agency A", patient: "Carol baskin", gender: "F" },
-    { agency: "Agency A", patient: "Esther Friedman", gender: "M" },
-    { agency: "Agency A", patient: "Zaritskaia Raia", gender: "M" },
-    { agency: "Agency B", patient: "Judy Gottesman", gender: "F" },
-];
-
-const a = groupBy(data, "agency", "gender");
-
-console.log(a.get("Agency B"));
-
-
-
