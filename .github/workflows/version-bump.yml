@@ -19,22 +19,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 7.0.1
           
       - name: Use Node.js 17
         uses: actions/setup-node@v3
         with:
           node-version: 17.x
-          cache: "pnpm"
+          cache: "npm"
           
       - name: Build
-        run: pnpm build
+        run: npm run build
 
       - name: Bump version
-        run: pnpm version
+        run: npm version
         
       - name: Add & Commit
         uses: EndBug/add-and-commit@v9.0.0
